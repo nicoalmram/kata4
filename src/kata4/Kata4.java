@@ -6,7 +6,7 @@ public class Kata4 {
     
     public static void main(String[] args) {
         
-        String fileName = new String("email.txt");
+        String fileName = "email.txt";
         List<Mail> mailList = MailListReader.read(fileName);
         Histograma histogram = MailHistogramBuilder.build(mailList);
         HistogramDisplay histoDisplay = new HistogramDisplay(histogram);
